@@ -128,6 +128,10 @@ if uploaded_file is not None:
                             cv2.rectangle(frame, (int(x - w/2), int(y - h/2)), (int(x + w/2), int(y + h/2)), color, 2)
                             cv2.putText(frame, label, (int(x - w/2), int(y - h/2) - 10),
                                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+                            
+                            # Draw tracking lines
+                            points = np.hstack(track).astype(np.int32).reshape((-1, 1, 2))
+                            cv2.polylines(frame, [points], isClosed=False, color=(230, 230, 230), thickness=3)
 
             # Update **single live tally**
             tally_text = (
