@@ -48,6 +48,8 @@ Clone the repository and install dependencies:
 git clone https://github.com/mgoodman96/TrafficTally.git
 cd TrafficTally
 pip install -r requirements.txt
+# split videos (optional)
+python -m split_videos.py input.mp4 output_dir num_splits
 streamlit run TrafficTally.py
 ```
 
