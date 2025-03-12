@@ -2,6 +2,8 @@
 
 **Automated Traffic Analysis Using Computer Vision**  
 
+**Project by Michael Goodman in part with the Applied Data Science Program at The University of Chicago**
+
 TrafficTally is a computer vision-powered solution designed to automate and streamline urban traffic studies. By leveraging **YOLOv11 Nano with ByteTrack**, the system efficiently detects and tracks pedestrians, bicycles, and vehicles in traffic footage, significantly reducing manual review time.
 
 ## 📌 Project Overview  
@@ -13,14 +15,14 @@ Traditional traffic analysis involves manually reviewing hours of footage to cou
 
 TrafficTally solves these challenges by:  
 🚀 **Automatically detecting and counting objects** in traffic videos.  
-⚡ **Processing videos in parallel chunks** using GPU acceleration.  
+⚡ Optional **Processing videos in parallel** using GPUs.  
 📊 **Providing structured output** for urban planning and research.  
 
 ---
 
 ## 🎥 Data Collection  
 
-We partnered with the **University of Wisconsin-Milwaukee** to analyze **72 hours of traffic footage** from **three intersections** in Milwaukee. The dataset includes:  
+Partnered with the **University of Wisconsin-Milwaukee** to analyze **72 hours of traffic footage** from **three intersections** in Milwaukee. The dataset includes:  
 - **Diverse conditions**: Variations in lighting, weather, and traffic density.  
 - **Multiple object types**: Pedestrians, bicycles, and vehicles.  
 - **24 FPS video quality**: Standard footage from traffic cameras.  
@@ -33,8 +35,7 @@ TrafficTally automates the analysis of long-duration traffic videos through **YO
 
 1. **Object Detection** – Identifies pedestrians, bicycles, and vehicles.  
 2. **Multi-Object Tracking (MOT)** – Ensures accurate tallies by avoiding duplicate counts across frames.  
-3. **Parallel Processing** – GPU acceleration can enables fast video processing, speeding up analysis.  
-4. **Output Generation** – Produces structured counts and tracking data for further research.  
+3. **Output Generation** – Produces structured counts and tracking data for further research.  
 
 ---
 
